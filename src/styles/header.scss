@@ -1,0 +1,100 @@
+.header {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 0.6875rem;
+  @media (min-width: 780px) {
+    padding: 0.6875rem 0;
+  }
+  @media (min-width: 1920px) {
+    padding: 1.5625rem 0 1.45833333rem 0;
+  }
+  &__container {
+    box-sizing: border-box;
+    padding: 0 17.815% 0 14.6875%;
+    @media (min-width: 780px) {
+      padding: 0 5.1282051% 0 5.1282051%;
+    }
+    @media (min-width: 1920px) {
+      padding: 0 4.375rem 0 3.8020833rem;
+    }
+  }
+  &__left {
+    height: 3.9375rem;
+    @media (min-width: 780px) {
+      width: 32%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+      margin-right: 2rem;
+    }
+    @media (min-width: 1920px) {
+      height: auto;
+      margin-right: 3.385416666666667rem;
+    }
+  }
+  &__left_icon {
+    width: 13.5rem;
+    @media (min-width: 1920px) {
+      width: 16.5625rem;
+      height: 4.830729166666667rem;
+    }
+  }
+  &__right {
+    display: none;
+    position: relative;
+    width: 67%;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #a6abbd;
+    @media (min-width: 780px) {
+      display: inline-block;
+    }
+    @media (min-width: 1200px) {
+      width: 76%;
+    }
+    @media (min-width: 1920px) {
+      position: static;
+      width: auto;
+    }
+  }
+  &__nav-menu_link {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    // margin-right: 4rem;
+    @media (min-width: 1920px) {
+      font-size: 0.83333333rem;
+      line-height: 1.25rem;
+      padding: 0.307291666rem 1.25rem;
+      margin-right: 3.59375rem;
+    }
+  }
+  &__nav-menu_link:hover {
+    // padding: 0.25rem 1.5rem;
+    color: #ffffff;
+    background-color: #00c368;
+    box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
+    border-radius: 8px;
+  }
+  &__nav-menu_link:last-child {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    @media (min-width: 1920px) {
+      width: 4.11458333rem;
+      margin-right: 0;
+      padding: 0.2083333333333333rem 1.041666666666667rem;
+      right: 4.375rem;
+    }
+  }
+}
+
+.first-link {
+  @media (min-width: 1920px) {
+    margin-right: 2.3958333rem;
+  }
+}

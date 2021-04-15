@@ -1,0 +1,297 @@
+.main {
+  position: relative;
+  padding: 4rem 0 3.75rem;
+  @media (min-width: 780px) {
+    background: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%);
+  }
+  @media (min-width: 1920px) {
+    padding: 3.90625rem 0 4.84375rem;
+  }
+  &__balls {
+    display: none;
+    @media (min-width: 1920px) {
+      display: block;
+    }
+    img {
+      position: absolute;
+    }
+    .left-balls {
+      width: 23.020833333rem;
+      height: 23.28125rem;
+      top: 45%;
+      left: 2rem;
+    }
+    .right-balls {
+      width: 30.625rem;
+      height: 27.03125rem;
+      right: 0;
+    }
+  }
+  &__container {
+    box-sizing: border-box;
+    padding: 0 5.3125% 0 4.6875%;
+    @media (min-width: 780px) {
+      padding: 0 11.5384615%;
+    }
+    @media (min-width: 1920px) {
+      padding: 0 15.9375rem 0 20.36458333333333rem;
+    }
+  }
+  &__logo {
+    position: relative;
+    text-align: center;
+    height: 7.1875rem;
+    @media (min-width: 780px) {
+      display: none;
+    }
+  }
+  &__title {
+    max-width: 24.3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin: 2.375rem auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 780px) {
+      font-size: 1.875rem;
+      line-height: 2.375rem;
+      margin: 0 auto;
+      max-width: none;
+    }
+    @media (min-width: 1920px) {
+      font-size: 2.083333333333333rem;
+      line-height: 2.447916666666667rem;
+    }
+  }
+  &__title::before {
+    @media (min-width: 780px) {
+      content: "";
+      display: block;
+      width: 184px;
+      height: 4px;
+      background-color: #00c368;
+      margin: 0 auto 1.375rem;
+    }
+    @media (min-width: 1920px) {
+      margin: 0 auto 1.1458333rem;
+      width: 9.58333333rem;
+      height: 0.2083333rem;
+    }
+  }
+  &__my-bxslider {
+    position: relative;
+    width: 11rem;
+    margin: 0 auto;
+    @media (min-width: 780px) {
+      display: none;
+    }
+  }
+  &__list {
+    display: none;
+    position: relative;
+    margin: 4.3125rem auto 0;
+    @media (min-width: 780px) {
+      display: block;
+    }
+    @media (min-width: 1920px) {
+      margin: 3.59375rem auto 0;
+    }
+  }
+  &__line {
+    text-align: center;
+    .card svg {
+      @media (min-width: 1920px) {
+        width: 3.333333rem;
+        height: 3.75rem;
+      }
+    }
+    .card:last-child svg {
+      @media (min-width: 1920px) {
+        width: 2.9166666rem;
+        height: 3.75rem;
+      }
+    }
+  }
+  &__line-2 {
+    margin-top: 18rem;
+    @media (min-width: 1200px) {
+      margin-top: 4.5rem;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 3.75rem;
+    }
+    .card {
+      @media (min-width: 1200px) {
+        padding-top: 2.8rem;
+        vertical-align: top;
+        margin-right: 2.21875rem;
+      }
+      @media (min-width: 1920px) {
+        padding-top: 2.96875rem;
+        margin-right: 1.8489583rem;
+      }
+    }
+    .card__logo img {
+      @media (min-width: 1920px) {
+        width: 2.91666666rem;
+        height: 3.75rem;
+      }
+    }
+    .card:last-child {
+      @media (min-width: 1200px) {
+        margin-left: 1rem;
+      }
+      @media (min-width: 1920px) {
+        margin-left: 0.8333333333333333rem;
+      }
+      img {
+        @media (min-width: 1920px) {
+          width: 5rem;
+          height: 4.53125rem;
+        }
+      }
+    }
+  }
+  &__line-3 {
+    margin-top: 3rem;
+    @media (min-width: 1920px) {
+      margin-top: 2.03125rem;
+    }
+  }
+  &_berry {
+    width: 27.27125rem;
+    height: 14.375rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media (min-width: 1200px) {
+      display: inline-block;
+      position: static;
+      transform: translate(0);
+    }
+    @media (min-width: 1920px) {
+      width: 22.72604rem;
+      height: 11.9791666rem;
+    }
+  }
+}
+
+.bx-wrapper {
+  margin: 3.125rem 0 0;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  .bx-controls-direction a {
+    width: 0.8rem;
+    height: 1.25rem;
+    margin-top: 0.1875rem;
+    top: auto;
+  }
+  .bx-prev {
+    left: 1rem;
+    background: url(../img/slider-left.svg) no-repeat 0;
+  }
+  .bx-next {
+    right: 0.8125rem;
+    background: url(../img/slider-right.svg) no-repeat 0;
+    :hover,
+    :focus {
+      background-position: 0;
+    }
+  }
+  .bx-controls-direction {
+    position: relative;
+  }
+  .bx-pager {
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin-top: 3.6875rem;
+  }
+  .bx-pager-item {
+    margin-right: 0.75rem;
+  }
+  .bx-pager-item:first-child {
+    margin: 0 1rem;
+  }
+  .bx-pager-item:last-child {
+    margin-right: 1rem;
+  }
+  .bx-pager.bx-default-pager a {
+    background: #e7ebf0;
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    :hover,
+    :focus {
+      background: #a6abbd;
+    }
+  }
+  .bx-pager.bx-default-pager a.active {
+    background: #a6abbd;
+  }
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  vertical-align: middle;
+}
+.card {
+  position: relative;
+  @media (min-width: 780px) {
+    margin-right: 6.8125rem;
+    width: 11rem;
+    display: inline-block;
+    position: static;
+    text-align: center;
+  }
+  @media (min-width: 1920px) {
+    width: 9.27083333rem;
+    line-height: 0.9895833333333333rem;
+    margin-right: 5.67708333rem;
+  }
+  &__text {
+    position: relative;
+    line-height: 1.1875rem;
+    margin-top: 1.53125rem;
+    @media (min-width: 1920px) {
+      margin-top: 1.171875rem;
+      line-height: 0.9895833333333333rem;
+    }
+  }
+  &__logo {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+    .icon-tablet {
+      width: 3.5rem;
+    }
+    .icon-mouse {
+      width: 6rem;
+    }
+  }
+  &__logo_icon {
+    width: 4rem;
+    vertical-align: middle;
+  }
+  &__logo_icon:hover {
+    path,
+    rect,
+    circle {
+      stroke: #00c368;
+    }
+  }
+}
+
+.card:last-child {
+  @media (min-width: 780px) {
+    margin-right: 0;
+  }
+}

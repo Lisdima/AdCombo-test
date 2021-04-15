@@ -1,0 +1,8 @@
+.double-section {
+  @media (min-width: 1920px) {
+    display: table;
+    direction: rtl;
+    width: 100%;
+    font-size: 0;
+  }
+}
